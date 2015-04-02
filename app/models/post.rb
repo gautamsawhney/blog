@@ -1,5 +1,6 @@
 class Post < ActiveRecord::Base
-  attr_accessible :body, :title,:image, :image_remote_url
+  attr_accessible :body, :title,:image, :image_remote_url, :tag_list
+  acts_as_taggable
    attr_reader :image_remote_url
   has_attached_file :image, :styles => { :medium => "300x300>", :thumb => "100x100>" },
   									:url => "/system/:class/:attachment/:id/:style_:basename.:extension",

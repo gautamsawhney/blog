@@ -1,4 +1,6 @@
 Blog::Application.routes.draw do
+  get 'tags/:tag', to: 'posts#index', as: :tag
+  root :to => 'posts#index', via: :get
   resources :posts
 
 
