@@ -1,0 +1,1 @@
+(function(){jQuery(function(){return $("#post_tag_list").autocomplete({source:["travel","food","humor"]})})}).call(this);
